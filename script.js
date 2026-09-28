@@ -6,6 +6,7 @@ let grow = 0
 let timeC = 10 + Math.floor(Math.random()*20)
 
 btn.addEventListener("click", () => {
+    btn.textContent = 'downloading...'
     btn.style.pointerEvents = 'none'
     bar.style.animation = `clr ${timeC*100}ms ease-in-out forwards`;
    let i = setInterval(() => {
